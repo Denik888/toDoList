@@ -1,0 +1,187 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body {
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #eeeeee 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	/* width: 1440px; */
+}
+
+h1 {
+	font-family: 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	opacity: 0.6;
+	letter-spacing: 5px;
+	padding: 10% 0 1% 0;
+}
+
+form {
+	display: flex;
+}
+
+.textinput {
+	border: 1px solid #666;
+	height: 50px;
+	padding: 0 15px;
+	font-size: 20px;
+	width: 300px;
+	/* margin: 0 0 10px 0; */
+}
+
+.textinput:focus{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.textbutton {
+	border: 1px solid rgb(3, 3, 3);
+	/* display: flex; */
+	background:#4addd6 url('../img/plus_small.png') 50% no-repeat;
+	cursor: pointer;
+	width: 60px;
+	height: 50px;
+	background-color: rgb(93, 112, 139);
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 1px;
+	/* margin: 0 0 30px 0; */
+}
+
+.textbutton:hover {
+	background-color: rgb(87, 129, 131);
+}
+
+.textbutton:active {
+	background-color: rgb(77, 169, 185);
+}
+
+.todolist {
+	max-width: 1110px;
+	margin: 0px auto;
+}
+
+.todolist__body {
+	padding: 0;
+}
+
+.todolist__header {
+	padding: 0;
+}
+
+.todolist__title {
+	margin: 0 0 50px 0;
+}
+
+.todolist__row {
+	display: flex;
+	justify-content:center;
+	/* border: 5px #666 solid; */
+} 
+
+.create_new_todo {
+	display: flex;
+	justify-content:center; 
+}
+
+.important {
+	font-weight: bold;
+	color: #A40E11; 
+}
+
+.todo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.todo li {
+    padding: 10px;
+}
+
+.todo li:not(:last-child) {
+    border-bottom: 1px solid #000; 
+}
+
+input[type=checkbox] {
+  opacity: 0;
+  position: absolute; 
+}
+
+input[type=checkbox], label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer; 
+}
+
+input[type=checkbox]:checked + label {
+	content: "";
+	text-decoration: line-through;
+	font-style: italic;
+  }
+
+ul {
+	position: relative;
+}
+.date {
+	position: absolute;
+	right: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+.del_todo {
+	/* background: url('/img/delBasket_small.png');
+	 */
+	/* background:#4addd6 url('../img/plus_small.png') 50% no-repeat; */
+	/* background: url('/img/delBasket_small.png');
+	background-size: 15px 15px; */
+	position: absolute;
+	right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+
+}
+
+.del_todo img {
+	pointer-events: none;
+}
