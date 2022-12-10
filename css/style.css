@@ -160,6 +160,7 @@ input[type=checkbox]:checked + label {
 ul {
 	position: relative;
 }
+
 .date {
 	position: absolute;
 	right: 40px;
